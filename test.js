@@ -77,4 +77,29 @@ function sumTwoSmallestNumbers(numbers) {
   
 }
 
-console.log(sumTwoSmallestNumbers([2, 10, 5]))
+function isPangram(string){
+  let letterMap = {}
+  for (let char of string.toLowerCase()) {
+      if (letterMap.hasOwnProperty(char)) {
+          letterMap[char]++
+      } else {
+          letterMap[char] = 1
+      }
+  }
+
+  return Object.keys(letterMap).length <= 26 ? false : true
+
+}
+
+
+  function solution(str){
+    arr = [];
+    for(let i = 0; i < str.length; i += 2){
+      
+      arr.push(str[i] + (str[i+1] ? str[i+1] : "_"));
+    }
+    return arr;
+  }
+
+
+console.log(solution('abcafafwfdef')) //["lo", "ve"]

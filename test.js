@@ -43,5 +43,38 @@ function order(words){
     
   
 
-  console.log(order2("4of Fo1r pe6ople g3ood th5e the2"))
-  console.log(order2(""))
+    var isSquare = function(n){
+     let root  = Math.sqrt(n)
+     let square = root * root
+     return square === n && Number.isInteger(root)
+
+    }
+    var isSquare = function(n){
+      return Number.isInteger(Math.sqrt(n))
+ 
+     }
+   
+     function XO(str) {
+      let x = 0
+      let o = 0
+      let word = str.toLowerCase().split("")
+      word.map(letter => {
+        if (letter === "x") x++
+        if (letter === "o") o++
+      })
+      return x===o
+  }
+  function XO(str) {
+    let x = str.match(/x/gi)
+    let o = str.match(/o/gi)
+    return x || o ? x.length === o.length : "no x or o"
+}
+
+function sumTwoSmallestNumbers(numbers) {  
+
+  numbers = numbers.sort((a,b) => a - b)
+ return numbers[0] + numbers[1]
+  
+}
+
+console.log(sumTwoSmallestNumbers([2, 10, 5]))

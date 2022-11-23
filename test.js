@@ -101,5 +101,20 @@ function isPangram(string){
     return arr;
   }
 
+ 
 
-console.log(solution('abcafafwfdef')) //["lo", "ve"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

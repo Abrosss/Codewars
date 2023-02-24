@@ -7,9 +7,6 @@ let output = []
         sum += Math.pow(digits[n], n + 1);
       }
     if(sum === num) output.push(sum)
-
-
-    
  }
  return output
   }

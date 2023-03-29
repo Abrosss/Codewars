@@ -4,4 +4,3 @@ function getRealFloor(n) {
     else if(n>12) return n-2
 }
 
-console.log(getRealFloor(13))
